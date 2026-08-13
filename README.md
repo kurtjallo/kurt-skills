@@ -4,6 +4,7 @@ A collection of reusable Claude Skills. Copy any of them into your own setup and
 
 ## Skills
 
+- [Explain Code](./explain-code/) - Teaches you how code works by tracing one example through the whole flow, so you can read and review similar code yourself.
 - [Simple Technical English](./simple-technical-english/) - Explains technical work simply and directly, instead of producing verbose or over-engineered detail.
 
 ## Getting Started
@@ -16,20 +17,20 @@ For personal use, available in every project:
 
 ```bash
 mkdir -p ~/.claude/skills/
-cp -r simple-technical-english ~/.claude/skills/
+cp -r explain-code ~/.claude/skills/
 ```
 
 For one project only, so it can be committed and shared with a team:
 
 ```bash
 mkdir -p /path/to/project/.claude/skills/
-cp -r simple-technical-english /path/to/project/.claude/skills/
+cp -r explain-code /path/to/project/.claude/skills/
 ```
 
-Verify the skill was found:
+Replace `explain-code` with whichever skill you want. Verify it was copied:
 
 ```bash
-head ~/.claude/skills/simple-technical-english/SKILL.md
+head ~/.claude/skills/explain-code/SKILL.md
 ```
 
 Then start Claude Code. The skill loads automatically.
@@ -41,9 +42,9 @@ Then start Claude Code. The skill loads automatically.
 
 ## Usage
 
-Claude activates a skill when your request matches its description, so often you do not need to mention it. To be certain it applies, name it: *"Use simple technical english to explain this bug."*
+Claude activates a skill when your request matches its description, so often you do not need to mention it. To be certain it applies, name it: *"Use explain-code to walk me through this pull request."*
 
-Simple Technical English changes explanations like this:
+As an example of the difference, Simple Technical English changes explanations like this:
 
 > **Before:** The controller delegates persistence concerns to the service layer and serializes the resulting domain entity.
 >

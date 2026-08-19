@@ -4,6 +4,7 @@ Reusable Claude Skills. Copy any of them and use them freely.
 
 ## Skills
 
+- [Absolute Code Review](./skills/absolute-code-review/) - Reviews a diff or pull request for real risks, each with evidence and the smallest safe fix, instead of a long list of comments.
 - [Explain Code](./skills/explain-code/) - Teaches how code works by tracing one example through the whole flow, so you can review similar code yourself.
 - [Simple Technical English](./skills/simple-technical-english/) - Explains technical work simply and directly, instead of verbose or over-engineered detail.
 

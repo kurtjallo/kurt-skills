@@ -1,0 +1,16 @@
+{
+  "name": "kurt-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skills I use day to day as a software engineer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurtjallo/kurt-skills"
+  },
+  "license": "MIT",
+  "scripts": {
+    "check": "node scripts/check-skills.mjs",
+    "link": "bash scripts/link-skills.sh",
+    "list": "bash scripts/list-skills.sh"
+  }
+}

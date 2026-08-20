@@ -1,0 +1,21 @@
+{
+  "name": "kurtjallo",
+  "owner": {
+    "name": "kurtjallo",
+    "url": "https://github.com/kurtjallo"
+  },
+  "description": "Kurt's Claude Skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "kurt-skills",
+      "source": "./",
+      "description": "Skills I use day to day as a software engineer: code review, explaining code, and simple technical English.",
+      "category": "engineering",
+      "keywords": [
+        "code-review",
+        "explain-code",
+        "technical-writing"
+      ]
+    }
+  ]
+}

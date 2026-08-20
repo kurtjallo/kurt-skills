@@ -1,0 +1,30 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Skills, manifest and README agree
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No dependencies to install: the check is one script using only Node
+      # built-ins.
+      - name: Check skills
+        run: npm run check
+
+      - name: Check shell scripts parse
+        run: bash -n scripts/link-skills.sh scripts/list-skills.sh

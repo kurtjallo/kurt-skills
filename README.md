@@ -4,16 +4,16 @@ Claude Skills I use day to day as a software engineer. Copy any of them and use 
 
 ## Skills
 
-- [Absolute Code Review](./skills/absolute-code-review/) - Reviews a diff or pull request for real risks, each with evidence and the smallest safe fix, instead of a long list of comments.
-- [Explain Code](./skills/explain-code/) - Teaches how code works by tracing one example through the whole flow, so you can review similar code yourself.
-- [Simple Technical English](./skills/simple-technical-english/) - Explains technical work simply and directly, instead of verbose or over-engineered detail.
+- [Absolute Code Review](./skills/absolute-code-review/) `/absolute-code-review` - Reviews a diff or pull request for real risks, each with evidence and the smallest safe fix, instead of a long list of comments.
+- [Explain Code](./skills/explain-code/) `/explain-code` - Teaches how code works by tracing one example through the whole flow, so you can review similar code yourself.
+- [Simple Technical English](./skills/simple-technical-english/) `/simple-technical-english` - Explains technical work simply and directly, instead of verbose or over-engineered detail.
 
 ## Install
 
 Every skill lives in `skills/`, so one command installs all of them.
 
 ```bash
-git clone https://github.com/kurtjallo/skills.git kurt-skills
+git clone https://github.com/kurtjallo/kurt-skills.git kurt-skills
 mkdir -p ~/.claude/skills
 cp -r kurt-skills/skills/* ~/.claude/skills/
 ```
@@ -24,7 +24,9 @@ Restart Claude Code and the skills load automatically. On Claude.ai, click the s
 
 ## Usage
 
-Installing a skill does not mean it always runs. Each skill has a description saying when it applies, and Claude uses the ones that match your request. To be certain one applies, name it: *"Use explain-code to walk me through this pull request."*
+Installing a skill does not mean it always runs. Each skill has a description saying when it applies, and Claude uses the ones that match your request.
+
+To run one yourself, type its command from the list above, such as `/explain-code`. Naming it in a sentence also works: *"Use explain-code to walk me through this pull request."*
 
 ## License
 

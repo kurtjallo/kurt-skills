@@ -1,6 +1,6 @@
 # Skills
 
-Reusable Claude Skills. Copy any of them and use them freely.
+Claude Skills I use day to day as a software engineer. Copy any of them and use them freely.
 
 ## Skills
 

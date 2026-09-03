@@ -9,11 +9,14 @@
     {
       "name": "kurt-skills",
       "source": "./",
-      "description": "Skills I use day to day as a software engineer: code review, explaining code, and simple technical English.",
+      "description": "Skills I use day to day as a software engineer: code review, comprehension, reasoning, articulation, code explanation, and simple technical English.",
       "category": "engineering",
       "keywords": [
         "code-review",
+        "comprehension",
+        "engineering-reasoning",
         "explain-code",
+        "technical-communication",
         "technical-writing"
       ]
     }

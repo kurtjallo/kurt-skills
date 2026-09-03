@@ -1,7 +1,7 @@
 {
   "name": "kurt-skills",
   "version": "1.0.0",
-  "description": "Skills I use day to day as a software engineer: reviewing a diff for real risks, explaining how code works, and writing technical English that stays simple.",
+  "description": "Skills I use day to day as a software engineer: code review, comprehension, reasoning, articulation, code explanation, and simple technical English.",
   "author": {
     "name": "kurtjallo",
     "url": "https://github.com/kurtjallo"
@@ -10,13 +10,19 @@
   "license": "MIT",
   "keywords": [
     "code-review",
+    "comprehension",
+    "engineering-reasoning",
     "explain-code",
+    "technical-communication",
     "technical-writing",
     "engineering"
   ],
   "skills": [
     "./skills/absolute-code-review",
+    "./skills/articulate",
+    "./skills/comprehend",
     "./skills/explain-code",
+    "./skills/reason",
     "./skills/simple-technical-english"
   ]
 }

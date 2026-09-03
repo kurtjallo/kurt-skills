@@ -1,6 +1,8 @@
 # Skills
 
-Claude Skills I use day to day as a software engineer. Copy any of them and use them freely.
+Agent Skills I use day to day as a software engineer. Copy any of them and use them freely.
+
+The `SKILL.md` instructions are agent-agnostic. You can copy them into any harness that supports Agent Skills. The plugin commands below are the Claude Code installation path.
 
 ## Install
 
@@ -18,7 +20,7 @@ Or from inside a session:
 /plugin install kurt-skills@kurtjallo
 ```
 
-Installed this way the skills update when you run `claude plugin update`, and you get all three at once.
+Installed this way the skills update when you run `claude plugin update`, and you get the whole set at once.
 
 <details>
 <summary><strong>Copy the files instead</strong></summary>
@@ -39,17 +41,20 @@ On Claude.ai, click the skill icon (🧩) and upload a folder from `skills/`.
 
 ## Skills
 
-Each skill is a slash command. Type the command to run it, or describe the task and Claude reaches for the matching skill on its own.
+In Claude Code, each skill is a slash command. Type the command to run it. Skills that permit automatic invocation may also be selected when you describe a matching task.
 
 | Command | Skill | What it does |
 | --- | --- | --- |
 | `/absolute-code-review` | [Absolute Code Review](./skills/absolute-code-review/) | Reviews a diff or pull request for real risks, each with evidence and the smallest safe fix, instead of a long list of comments. |
+| `/articulate` | [Articulate](./skills/articulate/) | Trains clear, answer-first technical communication that stays aligned with the exact question and audience. |
+| `/comprehend` | [Comprehend](./skills/comprehend/) | Builds durable mental models of code and technical concepts through source-grounded explanation, reconstruction, and recall. |
 | `/explain-code` | [Explain Code](./skills/explain-code/) | Teaches how code works by tracing one example through the whole flow, so you can review similar code yourself. |
+| `/reason` | [Reason](./skills/reason/) | Trains engineering judgment by testing implementation choices, assumptions, evidence, alternatives, and tradeoffs. |
 | `/simple-technical-english` | [Simple Technical English](./skills/simple-technical-english/) | Explains technical work simply and directly, instead of verbose or over-engineered detail. |
 
 ## Usage
 
-Installing a skill does not mean it always runs. Each skill has a description saying when it applies, and Claude uses the ones that match your request.
+Installing a skill does not mean it always runs. Invoke it by name when you need it. Depending on the skill settings and harness, the assistant may also select it automatically.
 
 Two ways to run one yourself:
 
